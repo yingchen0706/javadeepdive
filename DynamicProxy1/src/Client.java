@@ -9,10 +9,11 @@ public class Client {
 
         InvocationHandler handler = new DynamicInvocationHandler(myAuto);
 
-        Car car = (Car) Proxy.newProxyInstance(myAuto.getClass().getClassLoader(), myAuto.getClass().getInterfaces(),
+        Auto car = (Auto) Proxy.newProxyInstance(handler.getClass().getClassLoader(), myAuto.getClass().getInterfaces(),
                 handler);
 
         car.run();
+
     }
 
 }
