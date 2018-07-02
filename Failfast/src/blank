@@ -1,0 +1,10 @@
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < 10; i++) {
+        map.setAt(i, i);
+    }
+    Iterator<Map.Entry<Integer, Integer>> it = map.iterator();
+    while (it.hasNext()) {
+        Map.Entry<Integer, Integer>> entry = it.next();
+        System.out.println(entry.key()); 
+        System.out.println(entry.value()); 
+    }
