@@ -1,0 +1,35 @@
+void sort(int[] nums) {
+    qSort(nums, 0, nums.length -1);
+}
+
+void qSort(int[] nums, int low, int high) {
+    if (low < high) {
+        int p = partition(nums, low, high);
+        qSort(nums, low, p-1);
+        qSort(nums, p+1, high);
+    }
+}
+
+int partition(int[] nums, int low, int high) {
+    int i = low;
+    int j = high+1;
+    int p = low;
+    while (true) {
+        while(nums[++i] < nums[p]) {
+            if (i>high) {
+                break;
+            }
+        } 
+        while (nums[--j] > nums[p]) {
+            ;
+        }
+        if (i < j) {
+            swap(nums, i,j);
+        } else {
+            break;
+        }
+    } 
+    swap(nums, p, j);
+    return j;
+}
+

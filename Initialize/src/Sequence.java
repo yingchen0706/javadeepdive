@@ -1,11 +1,14 @@
+import java.util.LinkedList;
+import java.util.List;
 
 public class Sequence {
 
-    private static Person p = new Person("Static member");
-
     static {
         new Person("static block");
+        List<Integer> list = new LinkedList<>();
     }
+
+    private static Person p = new Person("Static member");
 
     {
         new Person("initialize block");

@@ -1,0 +1,58 @@
+Classfile /Users/yingchen/Documents/javadeepdive/javaclass/Test.class
+  Last modified Aug 28, 2018; size 299 bytes
+  MD5 checksum 604acde87a1ae2379ebdf5f69e96b563
+  Compiled from "Test.java"
+public class Test
+  minor version: 0
+  major version: 54
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #3                          // Test
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #4.#15         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #3.#16         // Test.i:I
+   #3 = Class              #17            // Test
+   #4 = Class              #18            // java/lang/Object
+   #5 = Utf8               i
+   #6 = Utf8               I
+   #7 = Utf8               <init>
+   #8 = Utf8               (I)V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               main
+  #12 = Utf8               ([Ljava/lang/String;)V
+  #13 = Utf8               SourceFile
+  #14 = Utf8               Test.java
+  #15 = NameAndType        #7:#19         // "<init>":()V
+  #16 = NameAndType        #5:#6          // i:I
+  #17 = Utf8               Test
+  #18 = Utf8               java/lang/Object
+  #19 = Utf8               ()V
+{
+  Test(int);
+    descriptor: (I)V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #2                  // Field i:I
+         9: return
+      LineNumberTable:
+        line 4: 0
+        line 5: 4
+        line 6: 9
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 9: 0
+}
+SourceFile: "Test.java"
